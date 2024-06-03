@@ -20,8 +20,8 @@ generate_random_content() {
 }
 
 # Imposta l'intervallo dell'anno
-start_date="2025-01-01"
-end_date="2025-03-31"
+start_date="2024-06-01"
+end_date="2024-09-31"
 current_date="$start_date"
 
 while [[ "$current_date" < "$end_date" ]] || [[ "$current_date" == "$end_date" ]]; do

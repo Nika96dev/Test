@@ -10,7 +10,7 @@
 is_weekday() {
     local date=$1
     # %u: 1=Lunedi - 5=Venerdi, 6=Sabato, 7=Domenica
-    [ $(date -d "$date" +%u) -le 5 ]
+    [ $(date -d "$date" +%u) -le 3 ]
 }
 
 # Genera contenuto casuale per il README
@@ -20,8 +20,8 @@ generate_random_content() {
 }
 
 # Imposta l'intervallo dell'anno
-start_date="2024-06-01"
-end_date="2024-09-31"
+start_date="2024-11-01"
+end_date="2024-12-31"
 current_date="$start_date"
 
 while [[ "$current_date" < "$end_date" ]] || [[ "$current_date" == "$end_date" ]]; do
